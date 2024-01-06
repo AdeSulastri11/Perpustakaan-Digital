@@ -157,12 +157,10 @@ document.getElementById("formPencarian").addEventListener("submit", function (ev
   `;
       no++;
       tBodyBuku.appendChild(tr);
-      const table = document.getElementById("table");
-      table.scrollIntoView({ behavior: "smooth" })
     });
   }
-  const table = document.getElementById("table");
-  table.scrollIntoView({ behavior: "smooth" })
+  // const table = document.getElementById("table");
+  // table.scrollIntoView({ behavior: "smooth" })
 });
 renderBooks(0);
 renderPagination()
