@@ -67,8 +67,6 @@ function renderBooks(startIndex) {
     tBodyBuku.appendChild(tr)
   })
 
-  const table = document.getElementById("table");
-  table.scrollIntoView({ behavior: "smooth" })
 }
 
 // cari buku
@@ -159,8 +157,6 @@ document.getElementById("formPencarian").addEventListener("submit", function (ev
       tBodyBuku.appendChild(tr);
     });
   }
-  // const table = document.getElementById("table");
-  // table.scrollIntoView({ behavior: "smooth" })
 });
 renderBooks(0);
 renderPagination()
