@@ -15,7 +15,7 @@
       <div class="col-md-6">
         <div class="card">
           <div class="card-header text-center">
-            Halaman LogIn
+            Registrasi
           </div>
           <div class="card-body">
             <div id="registerPage">
@@ -47,7 +47,7 @@
                 </div>
               </div>
               <div class="mb-3">
-                <button onclick="register()" class="btn btn-primary form-control">LogIn</button>
+                <button onclick="register()" class="btn btn-primary form-control">Daftar</button>
               </div>
             </div>
           </div>
@@ -66,13 +66,16 @@
       var registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
 
       for (var i = 0; i < registeredUsers.length; i++) {
+      //   if (registeredUsers[i].username === regUsername) {
+      //     alert("Username already exists. Please choose a different one.");
+      //     console.log(registeredUsers)
+      //     return;
+      //   } else {
+      //   window.location.href = 'login.html'
+      // }
         if (registeredUsers[i].username === regUsername) {
-          alert("Username already exists. Please choose a different one.");
-          console.log(registeredUsers)
-          return;
-        } else {
-        window.location.href = 'login.html'
-      }
+          window.location.href = 'index.html'
+        } 
       } 
 
       // Tambahkan pengguna baru ke daftar terdaftar
